@@ -40,7 +40,7 @@ def FindEmails(page_source: str):
     # a = 20
     for i in range(len(page_source)):
         if page_source[i] == '@':
-            if page_source[i + 1].isalnum():
+            if page_source[i + 1].isalpha():
                 if page_source[i - 1].isalnum():
                     # while a > -21:
                     #     string = string + page_source[i-a]
